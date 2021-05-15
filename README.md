@@ -14,3 +14,4 @@ This project is part of the Web Development course given by Professor Jamilton D
 
 ## Final result
 
+![](https://github.com/JorgeJuniorBSB/noticias-cidade_website/blob/76cb7df30065c4257835c247d6a0204bd6cd7bbd/public/tela-principal.png)
