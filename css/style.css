@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('../img/fundo-caixa.png');
+}
+
+main {
+    width: 55%;
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#container {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    background: url('../img/fundo.png') repeat-x top;
+}
+
+/* ********** HEADER AND NAV ********** */
+header {
+    width: 100%;
+    height: 250px;
+    float: left;
+    background: url('../img/detalhe-topo.png') no-repeat top right;
+}
+
+#logo h1 {
+    width: 152px;
+    height: 66px;
+    background-image: url('../img/logo.png');
+    text-indent: -9999px;
+    margin: 30px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: -6px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    background: #B20030 url('../img/divisor.png') repeat-y right;
+    -webkit-box-shadow: rgb(31, 31, 31) 2px 2px;
+            box-shadow: rgb(31, 31, 31) 2px 2px;  
+}
+
+nav ul li a:hover {
+    background: #eea7b8;
+    color:#B20030;  
+}
+
+#home #pagina-ativa,
+#brasil #pagina-ativa,
+#internacional #pagina-ativa,
+#economia #pagina-ativa,
+#saude #pagina-ativa,
+#ciencia #pagina-ativa,
+#fotos #pagina-ativa {
+    background: #eea7b8;
+    color:#B20030; 
+    cursor: text;
+}
+
+/* ********** CONTEUDO ********** */
+#conteudo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 100px; 
+}
+
+#conteudo section {
+    padding: 5px;
+}
+
+#conteudo-central {
+    width: 40%;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;  
+}
+
+#conteudo-lateral {
+    width: 40%;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+}
+
+#conteudo-menu-vertical {
+    width: 20%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+}
+
+.conteudo-titulo h3 {
+    background: #294970;
+    color: white;
+    padding: 5px;
+}
+
+.conteudo-link {
+    background: white;
+    margin-top: 10px;
+    padding: 15px;   
+}
+
+.conteudo-link span {
+    text-decoration: underline;
+    color: #B20030;
+    font-size: 14px;
+}
+
+.conteudo-link li {
+    border-bottom: rgb(142, 202, 204) solid 1px;
+    padding: 10px 0;
+    float: left;
+}
+
+.titulo-destaque {
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: #B20030;
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.titulo-destaque:hover {
+    background: #eea7b8;
+    color:#B20030;  
+}
+
+img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+li a img {
+    width: 40%;
+    float: left;
+}
+
+li a h5 {
+    padding-top: 10px;
+}
+
+li a p {
+    font-size: 14px;
+    max-width: 22ch;
+    overflow: hidden; /* Removendo barra de rolagem */
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; /* Adicionando "..." ao final */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Quantidade de linhas */
+    -webkit-box-orient: vertical;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ********** MENU VERTICAL ********** */
+.menu-vertical ul {
+    background: white;
+}
+
+.menu-vertical ul li {
+    margin-top: 10px;
+    padding: 5px 0 5px 10px;
+}
+
+.menu-vertical ul li a {
+    font-size: 14px;
+}
+
+.menu-vertical ul li a:hover{
+    padding-left: 25px;
+    background: url('../img/marcador.png') no-repeat center left;
+}
+
+/* ********** FOOTER ********** */
+footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #294970;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
